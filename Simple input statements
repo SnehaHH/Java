@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+class one
+{
+public static void main(String args[]) throws IOException
+{
+int a,b;
+char f,m;
+BufferedReader br= new BufferedReader( new InputStreamReader(System.in));
+System.out.println("Please enter your first integer");
+a= Integer.parseInt(br.readline());
+System.out.println("Please enter your second integer");
+b=Integer.parseInt(br.readLine());
+System.out.println(" Please enter a character to store these values");
+f= (char)br.read();
+System.out.println("Your character inputted is "+f);
+
+System.out.println(Now the two values inputted are" +a+  +b);
+}
+}
