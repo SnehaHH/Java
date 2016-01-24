@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+class obj
+{
+  int a,b,c;
+
+  public void Accept()
+   {
+     Scanner sc= new Scanner(System.in);
+     System.out.println("Please enter a number");
+     a= sc.nextInt();
+     System.out.println("Please enter another number");
+     b= sc.nextInt();
+  
+    }  
+  public void show()
+  {
+  
+    c= (int)Math.max(a,b);
+    System.out.println("The higher number from the numbers inputted are  "+c);
+    
+  }
+  public static void main(String args[])
+  {
+  obj d= new obj();
+  d.Accept();
+  d.show();
+  }
+}  
+  
