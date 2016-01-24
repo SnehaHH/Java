@@ -1,30 +1,30 @@
-import java.io.*;
+import java.io.*; //declaration of pakages being used
 import java.util.*;
-class obj
+class obj // Class name
 {
-  int a,b,c;
+  int a,b,c; //Public initialization of the variables whoch means they are accessible to all classes
 
-  public void Accept()
+  public void Accept() // method name
    {
-     Scanner sc= new Scanner(System.in);
-     System.out.println("Please enter a number");
+     Scanner sc= new Scanner(System.in); // object for scanner class
+     System.out.println("Please enter a number"); // input statements
      a= sc.nextInt();
      System.out.println("Please enter another number");
      b= sc.nextInt();
   
     }  
-  public void show()
+  public void show() // another method under the same class
   {
   
-    c= (int)Math.max(a,b);
+    c= (int)Math.max(a,b); // this is a function that helps us perform mathematical funtions the the desiered values
     System.out.println("The higher number from the numbers inputted are  "+c);
     
   }
-  public static void main(String args[])
+  public static void main(String args[]) // main method
   {
-  obj d= new obj();
-  d.Accept();
-  d.show();
+  obj d= new obj(); // pbject creation
+  d.Accept(); /* calling of each method using the object
+  d.show();     Note that the object creation must always come under the main method which is executed the first irrespective of where it is placed in the code*/
   }
 }  
   
