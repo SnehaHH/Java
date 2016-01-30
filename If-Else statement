@@ -1,0 +1,18 @@
+
+class ob // Class name
+{
+  public static void main(String args[]) // Main method
+   {
+     int a= 10; // Declartion of the Variable and its data type
+     int b= 15;
+     if(a>b) // This statement compares the two values or variables 
+       {
+         System.out.println("A is greater than B"); //In accordance to whether the above condition is true, it will execute this block
+        }
+        
+         else //If the condition does not hold true
+         {
+           System.out.println("Sorry A is smaller than B"); // This will be Executed
+          }
+    }
+ }    
