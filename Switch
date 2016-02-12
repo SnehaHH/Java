@@ -1,0 +1,22 @@
+import java.util.*;
+public class newswitch //Class name
+{
+public static void main(String args[])
+{
+Scanner sc= new Scanner(System.in); //Input statement
+int a; // Declaration of the variable
+System.out.println("Enter the day according to its number");//Outputs this
+a= sc.nextInt //Stores value given
+switch(a) // This statement checks the value in the following cases
+{
+case 1: System.out.println("Its Monday"); break; // Each case checks whether the value is true, If it is, it excutes the following 
+case 2: System.out.println("Its TuesdY"); break; //If the case does not hold true is checks the next case
+case 3: System.out.println("Its Wednesday"); break;
+case 4: System.out.println("Its Thursday"); break;
+case 5: System.out.println("Its Friday"); break;
+case 6: System.out.println("Its Saturday"); break;
+case 7: System.out.println("Its Sunday YIPEEE"); break;
+default: System.out.println("OOPS WRONG ENTRY, IT AIN'T A DAY");// Default works if no case is true
+}
+}
+}
