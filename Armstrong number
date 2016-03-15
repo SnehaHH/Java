@@ -1,0 +1,28 @@
+public class Armstrong
+{
+    
+   public static void main(String args[])
+   {
+       int a = 153; //Number to be checked
+       int num =a; //Storing the value in another variable
+       int s=0; //To calculate the sum
+       while( num>0) //Contion should be fulfilled
+       {
+           int h= num%10; //Extracting the digit
+           int b= h*h*h; //Finding the cube of that digit
+           s=s+b; //Finding the sum of the cubed number
+           num =num/10; //Reducing the number
+        }
+        
+        if( s==a)//To check  if the sum of the cubed numbers are equal to the original number
+        {
+            System.out.println("Armstrong");
+        }
+        else
+        {
+            System.out.println("Not Armstrong");
+        }
+    }
+}
+           
+       
