@@ -1,0 +1,32 @@
+
+public class Automorphic
+{
+    public static void main(String args[])
+    {
+        int num=25; //Save number in a variable
+        int a=num; //Assign it in another variable since the original value will be needed for further use
+        
+        int b = a*a; //Store the square in another variable
+        int d =0; //Used to check whether the number is automorphic or not later
+        while( a>0 && b>0) // Condition needed
+        {
+            if(a%10 != b%10) //To check whether the last digits are equal or not
+            {
+                d=1; //If they are not d becomes 1
+            }
+            
+            a=a/10; //To reduce the number
+            b=b/10;
+        }
+        
+        if( d==0) //If the numbers are equal then d remains the same and does not become 1
+        
+            System.out.println("It is automorphic " +num);
+        
+            
+        else
+        
+        System.out.println("Not automorphic" +num);
+    }
+        
+}
